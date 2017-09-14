@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Masterhead.master.cs" Inherits="Masterhead" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style14 {
+            overflow: hidden;
+            height: 29px;
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+        .auto-style16 {
+            margin-top: 3px;
+        }
+        .auto-style17 {
+            margin-right: 50px;
+            margin-top: 3px;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: #0099cc">
+    <form id="form1" runat="server">
+        <ul style="list-style-type: none; background-color: #0066CC;" class="auto-style14">
+            <li style="float: right"><asp:Button ID="logout" runat="server" Text="Logout" OnClick="btnlogout" style="margin-right: 20px;" BackColor="#0066CC" BorderWidth="0px" CausesValidation="False" Font-Bold="True" Font-Size="Large" CssClass="auto-style16" /></li>
+            <li style="float: right"><asp:Button ID="updateinfo" runat="server" Text="Update Info" OnClick="btnupdateinfo" BackColor="#0066CC" BorderWidth="0px" CausesValidation="False" Font-Bold="True" Font-Size="Large" CssClass="auto-style17" /></li>
+            <li style="float: right"><asp:Button ID="insert" runat="server" Text="Insert User" OnClick="btninsert" BackColor="#0066CC" BorderWidth="0px" CausesValidation="False" Font-Bold="True" Font-Size="Large" CssClass="auto-style17" /></li>        
+            <li style="float: right"><asp:Button ID="profil" runat="server" Text="Profile" OnClick="btnprofile" BackColor="#0066CC" BorderWidth="0px" CausesValidation="False" Font-Bold="True" Font-Size="Large" CssClass="auto-style17" /></li>        
+            <li style="float: right"><asp:Button ID="home" runat="server" Text="Home" OnClick="btnhome" BackColor="#0066CC" BorderWidth="0px" CausesValidation="False" Font-Bold="True" Font-Size="Large" CssClass="auto-style17" /></li>
+        </ul>
+        <asp:ContentPlaceHolder id="pagecontent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
